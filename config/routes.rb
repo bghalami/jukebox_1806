@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # resources :songs, except: [:destroy, :edit, :udpate]
   root 'songs#index'
   resources :songs, only: [:index]
+  resources :artists, only: [:new, :create]
 end
