@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+
+
+ h1 {
+   text-align: center;
+   font-family: 'Jua', sans-serif;
+ }
+
+body {
+  background-color: #ffe6e6;
+}
+
+ .cards {
+   font-family: 'Shadows Into Light', cursive;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+
+ li {
+   padding: 0px 0px 10px 0px;
+ }
+
+.card {
+  text-align: center;
+  background-color: #ff6666;
+  padding: 40px;
+  width: 150px;;
+  height: 175px;
+  border-radius: 45%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#sad-cat {
+  height: 70px;
+  width: 70px;
+  border-radius: 45%;
+}

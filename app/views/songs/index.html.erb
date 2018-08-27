@@ -1,8 +1,11 @@
 <h1>All Songs</h1>
-
+<div class='cards'>
 <% @songs.each do |song| %>
-  <ul>
-    <li>Title: <%= song.title %></li>
+  <ul class='card'>
+    <img id="sad-cat" src="https://i.pinimg.com/236x/1b/97/ab/1b97ab5373c95cf3d4aa420ae5ce5700--sad-kitty-sad-cat.jpg">
+    <li><strong>Title: <%= song.title %></strong></li>
+    <li><%= song.play_count %> seconds</li>
     <li>Play Count: <%= song.play_count %></li>
   </ul>
 <% end %>
+</div>
