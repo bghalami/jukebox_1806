@@ -5,7 +5,7 @@ describe 'As a user' do
     it "should see a form for new playlist" do
       playlist_name = "The Illlest Jams"
 
-      visit("/playlists/new")
+      visit new_playlist_path
       fill_in 'playlist[name]', with: playlist_name
       click_on "Create Playlist"
 
