@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # to keep routes away
   # resources :songs, except: [:destroy, :edit, :udpate]
   root 'songs#index'
-  resources :songs, only: [:index]
-  resources :artists, only: [:new, :create]
+  resources :songs, only: [:index, :show]
+  resources :artists, only: [:new, :create, :index, :show]
+  resources :playlists, only: [:new, :create, :index]
 end

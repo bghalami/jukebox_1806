@@ -4,17 +4,13 @@ describe 'As a user' do
   describe 'visits artists/new' do
     it "should see a form for new artist" do
       artist_name = "Outkast"
-      visit '/artists/new'
+      visit new_artist_path
 
       fill_in 'artist[name]', with: artist_name
       click_on "Create Artist"
 
-      expect(current_path).to eq('/artists')
-      expect(page).to have_content(artist_name)
+      expect(current_path).to eq(artists_path)
+      expect(page).to have_link(artist_name)
     end
   end
 end
-
-# As a user,
-# When I visit "/artists/new"
-# Then I see a form where I can create a new artist`
